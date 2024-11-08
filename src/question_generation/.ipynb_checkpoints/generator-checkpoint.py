@@ -72,14 +72,23 @@ class EnhancedQuestionGenerator:
         Generate question-answer pairs from the context
         """
         prompt = (
-            f"Please generate {num_questions} question and answer pairs based on the following text.\n\n"
-            f"{context}\n\n"
-            "Provide the output in the following format:\n"
-            "Question 1: [Question text]\n"
-            "Answer 1: [Answer text]\n"
-            "Question 2: [Question text]\n"
-            "Answer 2: [Answer text]\n"
-            "...\n"
+            f"You are a highly knowledgeable assistant trained to analyze technical and detailed content. "
+            f"Based on the following text, generate {num_questions} high-quality, contextually relevant question-answer pairs. "
+            f"Your task is to craft precise and well-structured questions that focus on the most critical aspects of the text, "
+            f"and provide accurate, concise answers as if you have full understanding of the subject.\n\n"
+            f"Text:\n{context}\n\n"
+            "Guidelines:\n"
+            "- The questions should capture the core ideas, technical nuances, and details in the text.\n"
+            "- Avoid general or trivial questions; focus on the key points or concepts that require understanding.\n"
+            "- The answers should be clear, accurate, and directly address the questions without introducing extraneous information.\n"
+            "- Use formal language and maintain technical accuracy.\n\n"
+            "Provide the output in this format:\n"
+            "Question 1: [Precise question text]\n"
+            "Answer 1: [Clear and accurate answer text]\n"
+            "Question 2: [Precise question text]\n"
+            "Answer 2: [Clear and accurate answer text]\n"
+            "...\n\n"
+            "Start your response below:\n"
         )
 
         payload = {
