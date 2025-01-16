@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ec2-user/SageMaker/Fine_Tune_LLMs/Big/mlruns/0/d0472b0cd40742b3874f4f24decee975/artifacts
+end_time: 1732114790788
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d0472b0cd40742b3874f4f24decee975
+run_name: ./results
+run_uuid: d0472b0cd40742b3874f4f24decee975
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732114763756
+status: 3
+tags: []
+user_id: ec2-user

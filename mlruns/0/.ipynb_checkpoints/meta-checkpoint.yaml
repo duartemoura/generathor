@@ -1,0 +1,6 @@
+artifact_location: file:///home/ec2-user/SageMaker/Fine_Tune_LLMs/Big/mlruns/0
+creation_time: 1732114763656
+experiment_id: '0'
+last_update_time: 1732114763656
+lifecycle_stage: active
+name: Default
